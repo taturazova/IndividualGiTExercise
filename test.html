@@ -19,28 +19,14 @@
 </head>
 
 <body>          
-    <p><img id="eggImg" src="egg.jpg" class="img" alt="Egg"></p>
-    <p id="eggText" class="center">Egg</p>
     <p id="rickP" state="image"><img src="rick.jpg" class="img" alt="Egg"></p>
     <p id="rickText" class="center">Rick</p>
 
     <script>
-        var eggImg = document.getElementById("eggImg");
-        var eggText = document.getElementById("eggText");
           
         var rickP = document.getElementById("rickP");
         var rickText = document.getElementById("rickText");
 
-        eggImg.onclick=function(){
-            var attr=eggImg.getAttribute("src");
-            if (attr=="egg.jpg"){
-                eggImg.setAttribute("src","eggRoll.jpg");
-                eggText.innerHTML="Egg Roll";
-            }else{
-                eggImg.setAttribute("src","egg.jpg");
-                eggText.innerHTML="Egg";
-            }
-        };
       
        rickP.onclick = function () {
             var attr = rickP.getAttribute("state");
