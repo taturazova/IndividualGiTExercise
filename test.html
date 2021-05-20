@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test</title>
+    <style>
+        .center {
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p><img id="eggImg" src="egg.jpg" class="img" alt="Egg"></p>
+    <p id="eggText" class="center">Egg</p>
+
+    <script>
+        var eggImg = document.getElementById("eggImg");
+        var eggText = document.getElementById("eggText");
+
+        eggImg.onclick=function(){
+            var attr=eggImg.getAttribute("src");
+            if (attr=="egg.jpg"){
+                eggImg.setAttribute("src","eggRoll.jpg");
+                eggText.innerHTML="Egg Roll";
+            }else{
+                eggImg.setAttribute("src","egg.jpg");
+                eggText.innerHTML="Egg";
+            }
+        };
+    </script>
+</body>
+
+</html>
