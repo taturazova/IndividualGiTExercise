@@ -8,7 +8,7 @@ Rickrolling is when you troll someone on the internet by linking to the music vi
 
 Features on the webpage:
 
-Egg -> Egg roll
-Rick -> the user gets rickrolled
+1. Egg -> Egg roll
+2. Rick -> the user gets rickrolled
 
 To get rickrolled, simply open the html web page in your browser.
